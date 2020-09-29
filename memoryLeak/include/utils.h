@@ -1,6 +1,6 @@
 
 /**
- * Comparator function for integers, ordering in 
+ * Comparator function for integers, ordering in
  * non-descending order.
  */
 int cmpInt(const void *a, const void *b);
@@ -22,4 +22,3 @@ int findMedian(const int *array, int size);
  * Returns a deep copy of the given array.
  */
 int * deepCopy(const int *array, int size);
-
