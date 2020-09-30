@@ -40,7 +40,7 @@ double getMean(int *array, int length)
   int mean;
   double sum;
 
-  readInArray(array, length)
+  readInArray(*array, length)
 
   for (i = 0; i < length; i++)
   {
@@ -50,7 +50,7 @@ double getMean(int *array, int length)
 
   printf("%d\n", mean);
 }
-
+/**
 int getMin(  ,  )
 {
 
@@ -60,9 +60,9 @@ int getMax(  , )
 {
 
 }
-
+*/
 int int main(int argc, char const *argv[])
 {
-  /* code */
+  getMean();
   return 0;
 }
