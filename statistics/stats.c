@@ -50,7 +50,7 @@ double getMean(int *array, int length)
 
   printf("%d\n", mean);
 }
-/**
+
 int getMin(  ,  )
 {
 
@@ -60,7 +60,7 @@ int getMax(  , )
 {
 
 }
-*/
+
 int main(int argc, char const *argv[])
 {
   getMean();
