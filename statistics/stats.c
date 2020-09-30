@@ -61,7 +61,7 @@ int getMax(  , )
 
 }
 */
-int int main(int argc, char const *argv[])
+int main(int argc, char const *argv[])
 {
   getMean();
   return 0;
