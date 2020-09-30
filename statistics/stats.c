@@ -43,7 +43,7 @@ double getMean(int *arr, int length)
 
   for (i = 0; i < length; i++)
   {
-    sum = arrayMean[i] + sum;
+    sum = arr[i] + sum;
   }
   mean = sum / length;
 

@@ -25,19 +25,19 @@ int main(int argc, char** argv) {
 	  exit(1);
 	}
 
-	//TODO: declare a static array "large enough" to hold as many integers as we'll need
-  int myArray [size];
+	//TODO: declare a static array "large enough" to hold as many integers as we'll need X
+  int arr [size];
 	//TODO (Activity 3): change your delcaration and initialization to use
 	// a dynamic array and malloc instead
-
-	//TODO: pass the appropriate variable
+  int *arr = (int *)malloc(sizeof(int)*size);
+	//TODO: pass the appropriate variable X
 	readInArray(myArray, size);
 
-	//TODO: pass the appropriate variables to your functions here
-  min = getMin(int *arrayMin, int lengthMin);
-  max = getMax(int *arrayMin, int lengthMax);
-  mean = getMean(int *arrayMean, int lengthMean);
-  printArray( , );
+	//TODO: pass the appropriate variables to your functions here X
+  min = getMin(arr, size);
+  max = getMax(arr, size);
+  mean = getMean(arr, size);
+  printArray(arr, size);
 
   printf("Min: %d\n", min);
   printf("Max: %d\n", max);
