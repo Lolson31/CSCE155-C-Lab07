@@ -38,12 +38,12 @@ void printArray(const int *arr, int size)
 double getMean(int *arr, int length)
 {
   double mean;
-  int sum = arr[0];
+  double sum = 0;
   int i;
 
   for (i = 0; i < length; i++)
   {
-    sum = arr[i] + sum;
+    sum += arr[i];
   }
   mean = sum / length;
 

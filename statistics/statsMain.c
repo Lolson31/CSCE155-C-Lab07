@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
 	   // a dynamic array and malloc instead
      int *arr = (int *)malloc(sizeof(int)*size);
 	//TODO: pass the appropriate variable X
-	   readInArray(myArray, size);
+	   readInArray(arr, size);
      //int *arr = generateRandomArray(size);
 
 	//TODO: pass the appropriate variables to your functions here X
