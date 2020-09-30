@@ -29,10 +29,10 @@ int main(int argc, char** argv) {
       //int arr [size];
 	//TODO (Activity 3): change your delcaration and initialization to use
 	   // a dynamic array and malloc instead
-     //int *arr = (int *)malloc(sizeof(int)*size);
+     int *arr = (int *)malloc(sizeof(int)*size);
 	//TODO: pass the appropriate variable X
-	   //readInArray(myArray, size);
-     int *arr = generateRandomArray(size);
+	   readInArray(myArray, size);
+     //int *arr = generateRandomArray(size);
 
 	//TODO: pass the appropriate variables to your functions here X
   min = getMin(arr, size);
