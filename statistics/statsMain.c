@@ -26,12 +26,13 @@ int main(int argc, char** argv) {
 	}
 
 	//TODO: declare a static array "large enough" to hold as many integers as we'll need X
-  int arr [size];
+      //int arr [size];
 	//TODO (Activity 3): change your delcaration and initialization to use
-	// a dynamic array and malloc instead
-  int *arr = (int *)malloc(sizeof(int)*size);
+	   // a dynamic array and malloc instead
+     //int *arr = (int *)malloc(sizeof(int)*size);
 	//TODO: pass the appropriate variable X
-	readInArray(myArray, size);
+	   //readInArray(myArray, size);
+     int *arr = generateRandomArray(size);
 
 	//TODO: pass the appropriate variables to your functions here X
   min = getMin(arr, size);
