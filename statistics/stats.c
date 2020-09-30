@@ -35,38 +35,31 @@ void printArray(const int *arr, int size)
   printf("%d]\n ", arr[size-1]);
 }
 
-double getMean(int *arrayMean, int lengthMean)
+double getMean(int *arr, int length)
 {
-  int mean;
-  int sum
+  double mean;
+  int sum = arr[0];
   int i;
 
-  readInArray(*arrayMean, lengthMean)
-
-  for (i = 0; i < (lengthMean - 1); i++)
+  for (i = 0; i < length; i++)
   {
-    sum = arrayMean[i] + arrayMean[i + 1];
+    sum = arrayMean[i] + sum;
   }
-  mean = sum / lengthMean;
+  mean = sum / length;
 
-  printf("%d\n", mean);
   return (mean);
 }
 
-int getMin(int *arrayMin, int lengthMin)
+int getMin(int *arr, int length)
 {
-  int min;
+  int min = arr[0];
   int i;
 
-  for (i = 0; i < lengthMin - 1; i++)
+  for (i = 0; i < length; i++)
   {
-    if (*arrayMin[i] < *arrayMin[i + 1])
+    if (arr[i] < min)
     {
-      min = arrayMin[i];
-    }
-    else
-    {
-      min = *arrayMin[i + 1];
+      min = arr[i];
     }
   }
 
@@ -74,23 +67,19 @@ int getMin(int *arrayMin, int lengthMin)
   return (min);
 }
 
-int getMax(int *arrayMin, int lengthMax)
+int getMax(int *arr, int length)
 {
-  int max;
+  int max = arr[0];
   int i;
 
-  for (i = 0; i < lengthMax - 1; i++)
+  for (i = 0; i < length; i++)
   {
-    if (*arrayMax[i] > *arrayMax[i + 1])
+    if (arr[i] > max)
     {
-      max = arrayMax[i];
-    }
-    else
-    {
-      max = *arrayMax[i + 1];
+      max = arr[i];
     }
   }
 
-  printf("%d\n", max);
+
   return (max);
 }
