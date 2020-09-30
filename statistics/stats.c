@@ -10,7 +10,7 @@ void readInArray(int *arr, int size)
   printf("Enter your list of numbers: ");
   for (i = 0; i < size; i++)
   {
-    scanf("%d", *arr[i]);
+    scanf("%d", &arr[i]);
   }
   return;
 }
